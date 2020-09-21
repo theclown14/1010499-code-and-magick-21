@@ -161,8 +161,9 @@
 
 <footer>
   <p><a href="http://htmlacademy.ru" class="footer-link"><img src="img/htmlacademy-logo.png" alt="HTML Academy"
-                                                              width="130">Сделано в HTML Academy</a>в 2017 году</p>
+                                                              width="130">Сделано в HTademy</a>в 2017 год/p>
 </footer>
+
 
 <template id="similar-wizard-template" style="display: none">
   <div class="setup-similar-item">
@@ -179,6 +180,26 @@
     <p class="setup-similar-label">Петр Петров</p>
   </div>
 </template>
+
+<script>
+    
+    var fireballSize = 22;
+    var getFireballSpeed = function (isMovingLeft) {
+       return isMovingLeft ? 2 : 5;
+    }
+    var wizardSpeed = 3; 
+    var wizardWidth = 70;
+    var getWizardHeight = function() {
+        return 1.337 * wizardWidth;
+    }
+    var getWizardX = function(fieldWidth) {
+        return (fieldWidth - wizardWidth) / 2;
+    }
+    var getWizardY = function(fieldHeight) {
+        return fieldHeight / 3;
+    }
+    
+</script>
 
 <script src="js/game.js"></script>
 
